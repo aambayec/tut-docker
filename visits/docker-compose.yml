@@ -1,0 +1,8 @@
+version: "3"
+services:
+  redis-server:
+    image: "redis"
+  node-app:
+    build: . # Dockerfile in the same folder
+    ports:
+      - "8081:8081"
