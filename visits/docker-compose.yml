@@ -3,6 +3,7 @@ services:
   redis-server:
     image: "redis"
   node-app:
+    restart: always # "no", always, on-failure (when with error code), unless-stopped
     build: . # Dockerfile in the same folder
     ports:
       - "8081:8081"

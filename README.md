@@ -84,3 +84,10 @@ exit
 # executing commands in container directly in shell
 docker exec -it postgres13 createdb --username=root --owner=root simple_bank
 ```
+
+# Restart Policies
+
+"no" - Never attempt to restart
+always - always attempt to restart
+on-failure - only restart if the container stops with an error code
+unless-stopped - alwaysrestart unless we forcibly stop it
