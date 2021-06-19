@@ -91,3 +91,11 @@ docker exec -it postgres13 createdb --username=root --owner=root simple_bank
 always - always attempt to restart
 on-failure - only restart if the container stops with an error code
 unless-stopped - alwaysrestart unless we forcibly stop it
+
+# To install node
+
+1. Install (NVM)[https://github.com/nvm-sh/nvm]
+
+```
+nvm install --lts
+```
