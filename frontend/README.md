@@ -56,3 +56,11 @@ docker attach 94173b3350c7 # not working
 # exec instead
 docker exec -it 2272698e45a3 sh
 ```
+
+Prod environment
+
+```
+# from Dockerfile
+docker build -t sampleprod:latest .
+docker run -p 8080:80 sampleprod
+```
