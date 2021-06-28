@@ -1,4 +1,4 @@
-# tut-docker-kubernetes
+# tut-docker
 
 tutorial from docker-and-kubernetes-the-complete-guide
 
