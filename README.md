@@ -2,7 +2,7 @@
 
 tutorial from docker-and-kubernetes-the-complete-guide
 
-# Docker Commands Guide
+## Docker Commands Guide
 
 ```shell
 docker build --help
@@ -85,17 +85,24 @@ exit
 docker exec -it postgres13 createdb --username=root --owner=root simple_bank
 ```
 
-# Restart Policies
+Rebuild Docker Image and Push to Docker Hub
+
+```shell
+docker build -t alaena/tut-multi-client .
+docker push
+```
+
+## Restart Policies
 
 "no" - Never attempt to restart
 always - always attempt to restart
 on-failure - only restart if the container stops with an error code
 unless-stopped - alwaysrestart unless we forcibly stop it
 
-# To install node
+## To install node
 
-1. Install (NVM)[https://github.com/nvm-sh/nvm]
+1. Install [NVM](https://github.com/nvm-sh/nvm)
 
-```
+```shell
 nvm install --lts
 ```
